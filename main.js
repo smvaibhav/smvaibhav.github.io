@@ -304,6 +304,53 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
+/***/ "./src/app/app-routing.module.ts":
+/*!***************************************!*\
+  !*** ./src/app/app-routing.module.ts ***!
+  \***************************************/
+/*! exports provided: AppRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _to_do_login_to_do_login_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./to-do-login/to-do-login.component */ "./src/app/to-do-login/to-do-login.component.ts");
+/* harmony import */ var _to_do_list_to_do_list_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./to-do-list/to-do-list.component */ "./src/app/to-do-list/to-do-list.component.ts");
+
+
+
+
+
+var routes = [
+    { path: 'login', component: _to_do_login_to_do_login_component__WEBPACK_IMPORTED_MODULE_3__["ToDoLoginComponent"] },
+    { path: 'todos', component: _to_do_list_to_do_list_component__WEBPACK_IMPORTED_MODULE_4__["ToDoListComponent"] },
+    { path: '', component: _to_do_login_to_do_login_component__WEBPACK_IMPORTED_MODULE_3__["ToDoLoginComponent"] }
+];
+var AppRoutingModule = /** @class */ (function () {
+    function AppRoutingModule() {
+    }
+    AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+            declarations: [],
+            imports: [
+                //CommonModule,
+                _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)
+            ],
+            exports: [
+                _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]
+            ],
+        })
+    ], AppRoutingModule);
+    return AppRoutingModule;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/app.component.css":
 /*!***********************************!*\
   !*** ./src/app/app.component.css ***!
@@ -322,7 +369,7 @@ module.exports = "\n  \n/*# sourceMappingURL=data:application/json;base64,eyJ2ZX
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\">\n    <span><h1 class=\"md-display-3\">{{ title }}</h1></span>\n</mat-toolbar>\n<app-to-do-list></app-to-do-list>"
+module.exports = "<mat-toolbar color=\"primary\">\n    <span><h1 class=\"md-display-3\">{{ title }}</h1></span>\n</mat-toolbar>\n<router-outlet></router-outlet>\n<!-- <app-to-do-list></app-to-do-list> -->"
 
 /***/ }),
 
@@ -372,15 +419,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _to_do_list_to_do_list_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./to-do-list/to-do-list.component */ "./src/app/to-do-list/to-do-list.component.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
-/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm5/card.es5.js");
-/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/input */ "./node_modules/@angular/material/esm5/input.es5.js");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/form-field */ "./node_modules/@angular/material/esm5/form-field.es5.js");
-/* harmony import */ var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/toolbar */ "./node_modules/@angular/material/esm5/toolbar.es5.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm5/card.es5.js");
+/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/input */ "./node_modules/@angular/material/esm5/input.es5.js");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/form-field */ "./node_modules/@angular/material/esm5/form-field.es5.js");
+/* harmony import */ var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/toolbar */ "./node_modules/@angular/material/esm5/toolbar.es5.js");
+/* harmony import */ var _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material/progress-spinner */ "./node_modules/@angular/material/esm5/progress-spinner.es5.js");
+/* harmony import */ var _todo_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./todo.service */ "./src/app/todo.service.ts");
+/* harmony import */ var _to_do_login_to_do_login_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./to-do-login/to-do-login.component */ "./src/app/to-do-login/to-do-login.component.ts");
+/* harmony import */ var _to_do_list_to_do_list_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./to-do-list/to-do-list.component */ "./src/app/to-do-list/to-do-list.component.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+
+
 
 
 
@@ -390,6 +445,12 @@ __webpack_require__.r(__webpack_exports__);
 
  //Material
  //Material
+
+
+
+
+
+// import service for routing
 
 
 
@@ -400,22 +461,29 @@ var AppModule = /** @class */ (function () {
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-                _to_do_list_to_do_list_component__WEBPACK_IMPORTED_MODULE_5__["ToDoListComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
+                _to_do_list_to_do_list_component__WEBPACK_IMPORTED_MODULE_17__["ToDoListComponent"],
+                _to_do_login_to_do_login_component__WEBPACK_IMPORTED_MODULE_16__["ToDoLoginComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
+                _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"],
+                //RouterModule.forRoot(appRoutes),
                 _angular_http__WEBPACK_IMPORTED_MODULE_6__["HttpModule"],
-                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__["BrowserAnimationsModule"],
-                _angular_material_card__WEBPACK_IMPORTED_MODULE_7__["MatCardModule"],
-                _angular_material_input__WEBPACK_IMPORTED_MODULE_8__["MatInputModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatButtonModule"],
-                _angular_material_form_field__WEBPACK_IMPORTED_MODULE_11__["MatFormFieldModule"],
-                _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_12__["MatToolbarModule"]
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_7__["HttpClientModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"],
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__["BrowserAnimationsModule"],
+                _angular_material_card__WEBPACK_IMPORTED_MODULE_8__["MatCardModule"],
+                _angular_material_input__WEBPACK_IMPORTED_MODULE_9__["MatInputModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_11__["MatButtonModule"],
+                _angular_material_form_field__WEBPACK_IMPORTED_MODULE_12__["MatFormFieldModule"],
+                _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_13__["MatToolbarModule"],
+                _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_14__["MatProgressSpinnerModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_18__["AppRoutingModule"]
             ],
-            providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+            providers: [_todo_service__WEBPACK_IMPORTED_MODULE_15__["TodoService"]],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -443,7 +511,7 @@ module.exports = "table, tr{\n  width: 100%;\n  border-radius: 5px;\n  border-co
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p></p>\n<!-- Start of Show ToDo  -->\n<table mat-table class=\"mat-elevation-z4\">\n  <ng-container matColumnDef>\n    <thead mat-header-cell >\n      <tr>\n        <th mat-header-cell>To-Do</th>\n        <th mat-header-cell>Due</th>\n        <th mat-header-cell>Notes</th>\n        <th mat-header-cell>Done</th>\n        <th mat-header-cell>Actions</th>\n      </tr>\n    </thead>\n    <tbody mat-cell>\n      <tr *ngFor=\"let mytodo of mytodos; let i=index\">\n        <td mat-cell>{{ mytodo.mtodo }}</td>\n        <td mat-cell>{{ mytodo.tododue }}</td>\n        <td mat-cell>{{ mytodo.todonotes }}</td>\n        <td mat-cell>{{ mytodo.tododone }}</td>\n        <td mat-cell><button mat-raised-button color=\"primary\" (click)=\"editTodo(i)\">\n                        <i class=\"material-icons\">create</i>\n                     </button>\n                     <button mat-raised-button color=\"warn\" (click)=\"deleteTodo(i)\">\n                        <i class=\"material-icons\">delete_outline</i>\n                     </button>\n         </td>\n      </tr>\n    </tbody>\n  </ng-container>\n  </table>\n<!-- End of Show ToDo  -->\n\n<!-- Start of Show Msg -->\n<div *ngIf=\"msg\" class=\"alert alert-todo\">\n    <mat-card>\n    <a style=\"color:#4152b4; text-decoration: none\" href=\"#\" class=\"close\" (click)=\"clickMe()\"><b>X</b></a>&nbsp;&nbsp;{{ msg }} \n  </mat-card>\n  </div>\n<!-- End of Show Msg -->\n\n<!-- Material Add Button -->\n<br>\n<button mat-raised-button color=\"primary\" (click)=\"toggle()\" >\n  <i class=\"material-icons\"><b>&nbsp;{{ buttonName }}&nbsp;</b></i>\n</button>\n<!-- Material Add Button -->\n\n<!-- Starting of Todo Insertion -->\n<ng-container *ngIf=\"showclk\">\n  <br><br>\n  <mat-card>\n  <mat-card-title>Create Todo:</mat-card-title>\n  <form class=\"todo-form\">\n      <mat-form-field class=\"todo-full-width\">\n          <input matInput placeholder=\"To Do\" type=\"text\" id=\"mtodo\" \n          name=\"mtodo\" [(ngModel)]=\"model.mtodo\"  required>\n      </mat-form-field>\n      <mat-form-field class=\"todo-full-width\" >\n          <input matInput type=\"date\" id=\"tododue\" name=\"tododue\" \n           [(ngModel)]=\"model.tododue\"  placeholder=\"Due\" required>\n      </mat-form-field>\n  \n      <mat-form-field>\n          <select matNativeControl placeholder=\"Done?\" id=\"tododone\" \n              name=\"tododone\" [(ngModel)]=\"model.tododone\">\n            <option value=\"Yes\">Yes</option>\n            <option value=\"No\">No</option>\n          </select>\n      </mat-form-field>\n      \n      <mat-form-field class=\"todo-full-width\">\n          <input matInput placeholder=\"Notes :\" type=\"text\" id=\"todonotes\" \n          name=\"todonotes\" [(ngModel)]=\"model.todonotes\">\n      </mat-form-field>\n\n        <button mat-raised-button color=\"primary\" type=\"submit\" (click)=\"addTodo()\">Save</button>\n       &nbsp; <button mat-raised-button type=\"reset\"  (click)=\"canceln()\">Cancel</button>\n  </form>\n</mat-card>\n</ng-container>\n<!-- //End of ToDo insertion -->\n\n<!-- Start of Update Data -->\n<ng-container *ngIf=\"editclk\">\n  <br><br>\n    <mat-card>\n    <mat-card-title>Edit Todo:</mat-card-title>\n    <form class=\"todo-form\">\n        <mat-form-field class=\"todo-full-width\">\n            <input matInput placeholder=\"Update ToDo\" type=\"text\" id=\"mtodo\" \n            name=\"mtodo\" [(ngModel)]=\"model2.mtodo\"  required>\n        </mat-form-field>\n        <mat-form-field class=\"todo-full-width\" >\n            <input matInput type=\"text\" id=\"tododue\" name=\"tododue\" \n             [(ngModel)]=\"model2.tododue\"  placeholder=\"Update Due\" required>\n        </mat-form-field>\n    \n        <mat-form-field>\n            <select matNativeControl placeholder=\"Done?\" id=\"tododone\" \n                name=\"tododone\" [(ngModel)]=\"model2.tododone\">\n              <option value=\"Yes\">Yes</option>\n              <option value=\"No\">No</option>\n            </select>\n        </mat-form-field>\n        \n        <mat-form-field class=\"todo-full-width\">\n            <input matInput placeholder=\"Update Notes\" type=\"text\" id=\"todonotes\" \n            name=\"todonotes\" [(ngModel)]=\"model2.todonotes\">\n        </mat-form-field>\n  \n          <button mat-raised-button color=\"primary\" type=\"submit\" (click)=\"updateTodo()\">Update</button>\n         &nbsp; <button mat-raised-button type=\"reset\"  (click)=\"cancel()\">Cancel</button>\n    </form>\n  </mat-card>\n  </ng-container>\n<!-- End of Update Data -->"
+module.exports = "<p></p>\n<!-- Start of Show ToDo  -->\n\n<table mat-table class=\"mat-elevation-z4\">\n  <ng-container matColumnDef>\n    <thead mat-header-cell >\n      <tr>\n        <th mat-header-cell>To-Do</th>\n        <th mat-header-cell>Due</th>\n        <th mat-header-cell>Notes</th>\n        <th mat-header-cell>Done</th>\n        <th mat-header-cell>Actions</th>\n      </tr>\n    </thead>\n    <tbody mat-cell>\n      <tr *ngFor=\"let mytodo of mytodos; let i=index\">\n        <td mat-cell>{{ mytodo.mtodo }}</td>\n        <td mat-cell>{{ mytodo.tododue }}</td>\n        <td mat-cell>{{ mytodo.todonotes }}</td>\n        <td mat-cell>{{ mytodo.tododone }}</td>\n        <td mat-cell><button mat-raised-button color=\"primary\" (click)=\"editTodo(i)\">\n                        <i class=\"material-icons\">create</i>\n                     </button>\n                     <button mat-raised-button color=\"warn\" (click)=\"deleteTodo(i)\">\n                        <i class=\"material-icons\">delete_outline</i>\n                     </button>  \n         </td>\n      </tr>\n    </tbody>\n  </ng-container>\n  </table>\n<!-- End of Show ToDo  -->\n\n<!-- Start of Show Msg -->\n\n<div *ngIf=\"msg\" class=\"alert alert-todo\">\n    <mat-card>\n    <a style=\"color:#4152b4; text-decoration: none\" href=\"#\" class=\"close\" (click)=\"clickMe()\"><b>X</b></a>&nbsp;&nbsp;{{ msg }} \n  </mat-card>\n  </div>\n<!-- End of Show Msg -->\n<!-- Material Add Button -->\n<br>\n<button mat-raised-button color=\"primary\" (click)=\"toggle()\" >\n  <i class=\"material-icons\"><b>&nbsp;{{ buttonName }}&nbsp;</b></i>\n</button>\n<mat-card-actions>\n  <button mat-raised-button (click)=\"logout()\" color=\"primary\">Logout</button>\n</mat-card-actions>\n<!-- Material Add Button -->\n\n<!-- Starting of Todo Insertion -->\n<ng-container *ngIf=\"showclk\">\n  <br><br>\n  <mat-card>\n  <mat-card-title>Create Todo:</mat-card-title>\n  <form class=\"todo-form\">\n      <mat-form-field class=\"todo-full-width\">\n          <input matInput placeholder=\"To Do\" type=\"text\" id=\"mtodo\" \n          name=\"mtodo\" [(ngModel)]=\"model.mtodo\"  required>\n      </mat-form-field>\n      <mat-form-field class=\"todo-full-width\" >\n          <input matInput type=\"date\" id=\"tododue\" name=\"tododue\" \n           [(ngModel)]=\"model.tododue\"  placeholder=\"Due\" required>\n      </mat-form-field>\n  \n      <mat-form-field>\n          <select matNativeControl placeholder=\"Done?\" id=\"tododone\" \n              name=\"tododone\" [(ngModel)]=\"model.tododone\">\n            <option value=\"Yes\">Yes</option>\n            <option value=\"No\">No</option>\n          </select>\n      </mat-form-field>\n      \n      <mat-form-field class=\"todo-full-width\">\n          <input matInput placeholder=\"Notes :\" type=\"text\" id=\"todonotes\" \n          name=\"todonotes\" [(ngModel)]=\"model.todonotes\">\n      </mat-form-field>\n\n        <button mat-raised-button color=\"primary\" type=\"submit\" (click)=\"addTodo()\">Save</button>\n       &nbsp; <button mat-raised-button type=\"reset\"  (click)=\"canceln()\">Cancel</button>\n  </form>\n</mat-card>\n</ng-container>\n<!-- //End of ToDo insertion -->\n\n<!-- Start of Update Data -->\n<ng-container *ngIf=\"editclk\">\n  <br><br>\n    <mat-card>\n    <mat-card-title>Edit Todo:</mat-card-title>\n    <form class=\"todo-form\">\n        <mat-form-field class=\"todo-full-width\">\n            <input matInput placeholder=\"Update ToDo\" type=\"text\" id=\"mtodo\" \n            name=\"mtodo\" [(ngModel)]=\"model2.mtodo\"  required>\n        </mat-form-field>\n        <mat-form-field class=\"todo-full-width\" >\n            <input matInput type=\"text\" id=\"tododue\" name=\"tododue\" \n             [(ngModel)]=\"model2.tododue\"  placeholder=\"Update Due\" required>\n        </mat-form-field>\n    \n        <mat-form-field>\n            <select matNativeControl placeholder=\"Done?\" id=\"tododone\" \n                name=\"tododone\" [(ngModel)]=\"model2.tododone\">\n              <option value=\"Yes\">Yes</option>\n              <option value=\"No\">No</option>\n            </select>\n        </mat-form-field>\n        \n        <mat-form-field class=\"todo-full-width\">\n            <input matInput placeholder=\"Update Notes\" type=\"text\" id=\"todonotes\" \n            name=\"todonotes\" [(ngModel)]=\"model2.todonotes\">\n        </mat-form-field>\n  \n          <button mat-raised-button color=\"primary\" type=\"submit\" (click)=\"updateTodo()\">Update</button>\n         &nbsp; <button mat-raised-button type=\"reset\"  (click)=\"cancel()\">Cancel</button>\n    </form>\n  </mat-card>\n  </ng-container>\n<!-- End of Update Data -->"
 
 /***/ }),
 
@@ -461,17 +529,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
 
 
 
 var ToDoListComponent = /** @class */ (function () {
-    function ToDoListComponent() {
+    function ToDoListComponent(router) {
+        this.router = router;
         this.showclk = false; //for new button
         this.buttonName = 'add';
         this.editclk = false; // for Edit
         this.mytodos = [
-            { mtodo: "Lunch with Lily", tododue: "Fri, Jan 18", todonotes: "Not any Notes", tododone: "Yes" },
-            { mtodo: "Visit N. Hirano", tododue: "Sat, Jan 26", todonotes: "Conform the Meeting ahead of time", tododone: "No" }
+            { mtodo: "Lunch with Lily", tododue: "Mon, Oct 10", todonotes: "Not any Notes", tododone: "Yes" },
+            { mtodo: "Visit N. Hirano", tododue: "Mon, Oct 11", todonotes: "Conform the Meeting ahead of time", tododone: "No" }
         ];
         this.model = {};
         this.model2 = {};
@@ -518,6 +589,9 @@ var ToDoListComponent = /** @class */ (function () {
     };
     ToDoListComponent.prototype.ngOnInit = function () {
     };
+    ToDoListComponent.prototype.logout = function () {
+        this.router.navigate(["login"]);
+    };
     ToDoListComponent.prototype.toggle = function () {
         this.showclk = !this.showclk;
         if (this.showclk)
@@ -538,9 +612,120 @@ var ToDoListComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./to-do-list.component.html */ "./src/app/to-do-list/to-do-list.component.html"),
             styles: [__webpack_require__(/*! ./to-do-list.component.css */ "./src/app/to-do-list/to-do-list.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
     ], ToDoListComponent);
     return ToDoListComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/to-do-login/to-do-login.component.css":
+/*!*******************************************************!*\
+  !*** ./src/app/to-do-login/to-do-login.component.css ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3RvLWRvLWxvZ2luL3RvLWRvLWxvZ2luLmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/to-do-login/to-do-login.component.html":
+/*!********************************************************!*\
+  !*** ./src/app/to-do-login/to-do-login.component.html ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<br>\n<mat-card class=\"example-card\">\n  <mat-card-header>\n    <mat-card-title>Login</mat-card-title>\n  </mat-card-header>\n  <mat-card-content>\n    <form class=\"example-form\">\n      <table class=\"example-full-width\" cellspacing=\"0\">\n        <tr>\n          <td>\n            <mat-form-field class=\"example-full-width\">\n            <input matInput placeholder=\"Username\" [(ngModel)]=\"username\" name=\"username\" required>\n            </mat-form-field>\n          </td>\n        </tr>\n        <tr>\n        <td><mat-form-field class=\"example-full-width\">\n          <input matInput placeholder=\"Password\" [(ngModel)]=\"password\"type=\"password\" name=\"password\" required>\n        </mat-form-field></td>\n      </tr></table>\n    </form>\n    <mat-spinner [style.display]=\"showSpinner ? 'block' : 'none'\"></mat-spinner>\n  </mat-card-content>\n  <mat-card-actions>\n    <button mat-raised-button (click)=\"login()\" color=\"primary\">Login</button>\n  </mat-card-actions>\n</mat-card>"
+
+/***/ }),
+
+/***/ "./src/app/to-do-login/to-do-login.component.ts":
+/*!******************************************************!*\
+  !*** ./src/app/to-do-login/to-do-login.component.ts ***!
+  \******************************************************/
+/*! exports provided: ToDoLoginComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ToDoLoginComponent", function() { return ToDoLoginComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
+
+var ToDoLoginComponent = /** @class */ (function () {
+    function ToDoLoginComponent(router) {
+        this.router = router;
+    }
+    ToDoLoginComponent.prototype.ngOnInit = function () {
+    };
+    ToDoLoginComponent.prototype.login = function () {
+        if (this.username == 'vaibhav' && this.password == 'Vaibhav@1996') {
+            this.router.navigate(["todos"]);
+        }
+        else {
+            alert("Invalid credentials");
+        }
+    };
+    ToDoLoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-to-do-login',
+            template: __webpack_require__(/*! ./to-do-login.component.html */ "./src/app/to-do-login/to-do-login.component.html"),
+            styles: [__webpack_require__(/*! ./to-do-login.component.css */ "./src/app/to-do-login/to-do-login.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+    ], ToDoLoginComponent);
+    return ToDoLoginComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/todo.service.ts":
+/*!*********************************!*\
+  !*** ./src/app/todo.service.ts ***!
+  \*********************************/
+/*! exports provided: TodoService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TodoService", function() { return TodoService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+
+
+
+var TodoService = /** @class */ (function () {
+    function TodoService(http) {
+        this.http = http;
+    }
+    TodoService.prototype.addTodo = function (mtodo, tododue, todonotes, tododone) {
+        var uri = 'http://localhost:3000/todos/add';
+        var obj = {
+            mtodo: mtodo,
+            tododue: tododue,
+            todonotes: todonotes,
+            tododone: tododone
+        };
+        this.http.post(uri, obj)
+            .subscribe(function (res) { return console.log('Done'); });
+    };
+    TodoService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+    ], TodoService);
+    return TodoService;
 }());
 
 
@@ -608,7 +793,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/surmountsoft/vaibhavyadav/work/angular7/webnesday/my-todo-mat/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /home/surmountsoft/vaibhavyadav/work/angular7/my-todo-cloud/src/main.ts */"./src/main.ts");
 
 
 /***/ })

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="222px" height="222px" viewBox="0 0 222 222" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 54.1 (76490) - https://sketchapp.com -->
+    <title>A9DC697E-6F51-4B24-9529-1291B823E9AA</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <circle id="path-1" cx="45" cy="45" r="45"></circle>
+        <filter x="-127.2%" y="-102.8%" width="354.4%" height="354.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="22" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="34.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.476109601 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-3" points="0 0 0 33.2769222 25.0289993 16.6384611"></polygon>
+    </defs>
+    <g id="approved-✅" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Videos" transform="translate(-489.000000, -894.000000)">
+            <g id="Group-2-Copy-4" transform="translate(555.000000, 938.000000)">
+                <g id="Oval-5" opacity="0.800000012">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="ic_play_arrow_24px" transform="translate(37.000000, 28.000000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="Shape" fill="#6849D7" fill-rule="nonzero" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
